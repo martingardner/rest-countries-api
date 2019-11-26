@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 import Country from "./country";
 import CountryDrilldown from "./country-drilldown";
 
 const Section = props => {
   const [getDrilldownVal, setDrilldownVal] = useState(null);
+  const [getFilterWord, setFilterWord] = useState("");
+  const [getFilterCategory, setFilterCategory] = useState("");
 
   let data = props.data;
 
@@ -25,9 +29,14 @@ const Section = props => {
           backToCountry={backToCountry}
         />
       ) : (
-        data.map(val => (
-          <Country data={val} drilldown={drilldown} key={val.name} />
-        ))
+        <>
+          <Row></Row>
+          <Row>
+            {data.map(val => (
+              <Country data={val} drilldown={drilldown} key={val.name} />
+            ))}
+          </Row>
+        </>
       )}
     </section>
   );
