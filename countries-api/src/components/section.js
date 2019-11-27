@@ -10,7 +10,7 @@ import "../css/section.css";
 const Section = props => {
   const [getDrilldownVal, setDrilldownVal] = useState(null);
   const [getFilterWord, setFilterWord] = useState("");
-  const [getFilterCategory, setFilterCategory] = useState("none");
+  const [getFilterCategory, setFilterCategory] = useState("default");
   const [getFilterData, setFilterData] = useState([]);
   const [getFilterDropdownList, setFilterDropdownList] = useState([]);
 
@@ -82,6 +82,9 @@ const Section = props => {
             </Col>
             <Col xs={12} md={6}>
               <select onChange={updateFilterCategory} value={getFilterCategory}>
+                <option value="default" key="default" disabled>
+                  Filter by Region
+                </option>
                 <option value="none" key="none">
                   none
                 </option>

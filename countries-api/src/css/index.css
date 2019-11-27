@@ -26,31 +26,7 @@ main {
   color: hsl(0, 0%, 100%);
 }
 
-.darkmode header {
-  background-color: hsl(209, 23%, 22%);
-}
-
-.darkmode input {
-  background-color: hsl(209, 23%, 22%);
-  color: hsl(0, 0%, 100%);
-  border: none;
-}
-
-.darkmode input::placeholder {
-  color: hsl(0, 0%, 100%);
-  opacity: 1;
-}
-
 .lightmode {
-  blackground-color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 98%);
   color: hsl(200, 15%, 8%);
-}
-
-.lightmode header {
-  background-color: hsl(0, 0%, 100%);
-  border-bottom: 1px solid rgb(221, 221, 223);
-}
-
-.lightmode input {
-  border: 1px solid rgb(221, 221, 223);
 }
