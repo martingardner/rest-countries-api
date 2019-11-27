@@ -30,14 +30,20 @@ const CountryDrilldown = props => {
       <Row>
         <Col>
           <button type="button" onClick={() => props.backToCountry()}>
-            ⬅️ <span>Back</span>
+            <span role="img" aria-label="back button">
+              ⬅️
+            </span>
+            <span>Back</span>
           </button>
         </Col>
       </Row>
       <Row>
         <Col xs={12} md={6}>
           <div className="image-wrapper">
-            <img src={props.drilldata.flag} />
+            <img
+              alt={props.drilldata.flag + " flag"}
+              src={props.drilldata.flag}
+            />
           </div>
         </Col>
         <Col xs={12} md={6} className="drilldown-card-data">
@@ -75,27 +81,18 @@ const CountryDrilldown = props => {
                 <span>
                   <b>Top Level Domain: </b>
                   {multiArrayComma(props.drilldata.topLevelDomain)}
-                  {/*props.drilldata.topLevelDomain.map(val => {
-                    return `${val} , `;
-                  })*/}
                 </span>
               </div>
               <div>
                 <span>
                   <b>Currencies: </b>
                   {multiArrayComma(props.drilldata.currencies, "name")}
-                  {/*props.drilldata.currencies.map(money => {
-                    return `${money.name} , `;
-                  })*/}
                 </span>
               </div>
               <div>
                 <span>
                   <b>Languages: </b>
                   {multiArrayComma(props.drilldata.languages, "name")}
-                  {/*props.drilldata.languages.map(lang => {
-                    return `${lang.name} , `;
-                  })*/}
                 </span>
               </div>
             </Col>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Col from "react-bootstrap/Col";
 
 import "../css/country.css";
@@ -8,7 +8,7 @@ const Country = props => {
     <Col className="country" xs={12} md={3}>
       <div onClick={() => props.drilldown(props.data.alpha3Code)}>
         <div className="image-wrapper">
-          <img src={props.data.flag} />
+          <img alt={props.data.flag + " flag"} src={props.data.flag} />
         </div>
         <div className="country-card">
           <h2>{props.data.name}</h2>

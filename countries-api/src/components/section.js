@@ -72,7 +72,11 @@ const Section = props => {
         <div className="section">
           <Row>
             <Col xs={12} md={6}>
-              <div className="mag-glass">🔍</div>
+              <div className="mag-glass">
+                <span role="img" aria-label="search">
+                  🔍
+                </span>
+              </div>
               <input
                 type="text"
                 placeholder="Search for a country..."
