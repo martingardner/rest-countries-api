@@ -5,6 +5,8 @@ import Col from "react-bootstrap/Col";
 import Country from "./country";
 import CountryDrilldown from "./country-drilldown";
 
+import "../css/section.css";
+
 const Section = props => {
   const [getDrilldownVal, setDrilldownVal] = useState(null);
   const [getFilterWord, setFilterWord] = useState("");
@@ -53,12 +55,7 @@ const Section = props => {
   useEffect(() => {
     let wordArr = filterWordArr();
     let filterArr = filterRegionArr();
-    console.log("wordArr", wordArr);
-    console.log("filterArr", filterArr);
-
     let filterSet = [...new Set([...wordArr, ...filterArr])];
-    console.log("filterSet", filterSet);
-    console.log("spreadset", [...filterSet]);
     setFilterData([...filterSet]);
   }, [getFilterWord, getFilterCategory]);
 
@@ -72,7 +69,7 @@ const Section = props => {
           backToCountry={backToCountry}
         />
       ) : (
-        <>
+        <div className="section">
           <Row>
             <Col>
               <input
@@ -102,7 +99,7 @@ const Section = props => {
               <Country data={val} drilldown={drilldown} key={val.name} />
             ))}
           </Row>
-        </>
+        </div>
       )}
     </section>
   );

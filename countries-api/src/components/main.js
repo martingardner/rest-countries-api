@@ -21,7 +21,6 @@ const Main = () => {
     const apiData = async () => {
       let data = await getData();
       if (!cancel && Array.isArray(data.data)) {
-        console.log("data", data.data);
         setRestData(data.data);
       }
     };
@@ -40,10 +39,12 @@ const Main = () => {
       {!getRestData ? (
         "Loading"
       ) : (
-        <Container>
-          <Header switchmode={switchmode}></Header>
-          <Section data={getRestData}></Section>
-        </Container>
+        <>
+          <Header switchmode={switchmode} darkmode={getDarkMode}></Header>
+          <Container>
+            <Section data={getRestData}></Section>
+          </Container>
+        </>
       )}
     </main>
   );
