@@ -98,7 +98,7 @@ const Section = props => {
               </select>
             </Col>
           </Row>
-          <Row>
+          <Row className="countryRow">
             {countryData.map(val => (
               <Country data={val} drilldown={drilldown} key={val.name} />
             ))}
