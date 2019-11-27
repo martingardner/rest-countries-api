@@ -6,7 +6,6 @@ import Col from "react-bootstrap/Col";
 import "../css/country-drilldown.css";
 
 const CountryDrilldown = props => {
-  console.log("props.drilldata", props.drilldata);
   return (
     <div className="country-drilldown">
       <Row>

@@ -7,7 +7,7 @@
 }
 
 .country-drilldown .row {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .country-drilldown button {
@@ -21,7 +21,7 @@
 }
 
 .country-drilldown .drilldown-card-data h2 {
-  margin: 50px 0px;
+  margin: 25px 0px;
   font-size: 24px;
   font-weight: 800;
 }
