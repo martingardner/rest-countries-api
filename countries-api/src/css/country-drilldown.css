@@ -53,6 +53,10 @@
   color: hsl(0, 0%, 100%);
 }
 
+.lightmode .country-drilldown .border-countries {
+  border: 1px solid rgb(221, 221, 223);
+}
+
 @media only screen and (max-width: 400px) {
   .country-drilldown .row:last-child {
     margin-top: 20px;
