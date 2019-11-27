@@ -80,7 +80,7 @@ const Section = props => {
                 onChange={updateFilterWord}
               />
             </Col>
-            <Col xs={12} md={6}>
+            <Col className="filter-select" xs={12} md={6}>
               <select onChange={updateFilterCategory} value={getFilterCategory}>
                 <option value="default" key="default" disabled>
                   Filter by Region

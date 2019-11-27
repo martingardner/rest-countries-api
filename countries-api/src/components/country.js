@@ -7,22 +7,26 @@ const Country = props => {
   return (
     <Col className="country" xs={12} md={3}>
       <div onClick={() => props.drilldown(props.data.alpha3Code)}>
-        <img src={props.data.flag} />
-        <h2>{props.data.name}</h2>
-        <div>
-          <span>
-            <b>Population:</b> {props.data.population}
-          </span>
+        <div className="image-wrapper">
+          <img src={props.data.flag} />
         </div>
-        <div>
-          <span>
-            <b>Region:</b> {props.data.region}
-          </span>
-        </div>
-        <div>
-          <span>
-            <b>Capital:</b> {props.data.capital}
-          </span>
+        <div className="country-card">
+          <h2>{props.data.name}</h2>
+          <div>
+            <span>
+              <b>Population:</b> {props.data.population.toLocaleString()}
+            </span>
+          </div>
+          <div>
+            <span>
+              <b>Region:</b> {props.data.region}
+            </span>
+          </div>
+          <div>
+            <span>
+              <b>Capital:</b> {props.data.capital}
+            </span>
+          </div>
         </div>
       </div>
     </Col>

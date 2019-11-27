@@ -15,7 +15,7 @@
   padding: 15px 0px;
 }
 
-.section div div:last-child {
+.section .filter-select {
   text-align: right;
 }
 
@@ -60,7 +60,7 @@ select {
     margin-top: 25px;
   }
 
-  .section div div:last-child {
+  .section .filter-select {
     text-align: left;
   }
 
