@@ -21,6 +21,10 @@ main {
   min-width: 100vw;
 }
 
+button:hover {
+  opacity: 0.5;
+}
+
 .darkmode {
   background-color: hsl(207, 26%, 17%);
   color: hsl(0, 0%, 100%);

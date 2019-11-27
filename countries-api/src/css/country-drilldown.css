@@ -1,0 +1,64 @@
+.country-drilldown .image-wrapper {
+  padding: 0px 20px 0px 0px;
+}
+
+.country-drilldown .image-wrapper img {
+  width: 100%;
+}
+
+.country-drilldown .row {
+  margin-top: 50px;
+}
+
+.country-drilldown button {
+  padding: 5px 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.country-drilldown button span {
+  margin-left: 5px;
+}
+
+.country-drilldown .drilldown-card-data h2 {
+  margin: 50px 0px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.country-drilldown .drilldown-card-data div div {
+  margin-bottom: 10px;
+}
+
+.country-drilldown .border-countries {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 30px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.lightmode .country-drilldown button {
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid rgb(221, 221, 223);
+}
+
+.darkmode .country-drilldown button {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+.darkmode .country-drilldown .border-countries {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+@media only screen and (max-width: 400px) {
+  .country-drilldown .row:last-child {
+    margin-top: 20px;
+  }
+
+  .country-drilldown .drilldown-card-data h2 {
+    margin: 25px 0px;
+  }
+}
