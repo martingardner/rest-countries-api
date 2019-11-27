@@ -71,15 +71,16 @@ const Section = props => {
       ) : (
         <div className="section">
           <Row>
-            <Col>
+            <Col xs={12} md={6}>
+              <div className="mag-glass">🔍</div>
               <input
                 type="text"
-                placeholder="search term"
+                placeholder="Search for a country..."
                 value={getFilterWord}
                 onChange={updateFilterWord}
               />
             </Col>
-            <Col>
+            <Col xs={12} md={6}>
               <select onChange={updateFilterCategory} value={getFilterCategory}>
                 <option value="none" key="none">
                   none
